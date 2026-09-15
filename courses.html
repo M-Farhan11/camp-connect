@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect - Courses</title>
+<meta name="description" content="Browse undergraduate programmes at CampusConnect, with subjects, skills and faculty details for each one.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ SHARED HEADER ============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="material-symbols-outlined brand-icon">school</span>
+      <span class="brand-name">CampusConnect</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a class="active" href="courses.html" aria-current="page">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a class="active" href="courses.html" aria-current="page">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------------------------- Page hero ---------------------------- -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Courses &amp; Programs</h1>
+      <p>
+        Explore undergraduate programmes and discover the courses that match your
+        academic interests and future career path.
+      </p>
+    </div>
+  </section>
+
+  <!-- ------------------ Catalog: filters + programme grid ---------------- -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Undergraduate Catalog</h2>
+        <p>Search by keyword or filter by department, then open a programme for the full breakdown.</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-field filter-field--grow">
+          <label for="courseSearch">Search programmes</label>
+          <input class="input" id="courseSearch" type="search" placeholder="Try &quot;software&quot;, &quot;python&quot; or &quot;networks&quot;">
+        </div>
+
+        <div class="filter-field">
+          <label for="departmentFilter">Filter by department</label>
+          <select class="select" id="departmentFilter">
+            <option value="all">All Departments</option>
+            <option value="cs">Computer Science</option>
+            <option value="se">Software Engineering</option>
+            <option value="it">Information Technology</option>
+            <option value="ee">Electrical Engineering</option>
+            <option value="bba">Business Administration</option>
+            <option value="math">Mathematics</option>
+          </select>
+        </div>
+
+        <p class="filter-count" id="courseCount">Showing 6 programs</p>
+      </div>
+
+      <div class="grid grid-3" id="courseList">
+        <article class="course-card card" data-department="cs"
+                 data-keywords="bs computer science algorithms artificial intelligence machine learning python c++ java sql software development problem solving">
+          <div class="course-meta">
+            <span>Computer Science</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Computer Science</h3>
+          <p>Build foundations in computing, algorithms, software development, artificial intelligence and problem solving.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="cs">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="se"
+                 data-keywords="bs software engineering requirements architecture testing agile scrum web technologies html css javascript databases c++ python uml">
+          <div class="course-meta">
+            <span>Software Engineering</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Software Engineering</h3>
+          <p>Learn software architecture, requirement engineering, testing, project management and modern development lifecycles.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="se">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="it"
+                 data-keywords="bs information technology networks networking cybersecurity security cloud computing databases linux system administration">
+          <div class="course-meta">
+            <span>Information Technology</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Information Technology</h3>
+          <p>Study networking, cybersecurity, cloud computing, databases and practical information technology systems.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="it">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="bba"
+                 data-keywords="bba business administration management marketing entrepreneurship finance accounting economics organisational strategy">
+          <div class="course-meta">
+            <span>Business Administration</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BBA (Business Administration)</h3>
+          <p>Develop knowledge in management, marketing, entrepreneurship, finance and organisational strategy.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="bba">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="ee"
+                 data-keywords="bs electrical engineering circuits electromagnetism signal processing power systems embedded hardware robotics matlab microcontrollers">
+          <div class="course-meta">
+            <span>Electrical Engineering</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Electrical Engineering</h3>
+          <p>Master circuitry, electromagnetism, signal processing, power systems and embedded hardware architectures.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="ee">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="course-card card" data-department="math"
+                 data-keywords="bs mathematics logic calculus algebra analysis statistics numerical computational modelling probability r python">
+          <div class="course-meta">
+            <span>Mathematics</span>
+            <span class="duration"><span class="material-symbols-outlined">schedule</span> 4 Years</span>
+          </div>
+          <h3>BS Mathematics</h3>
+          <p>Explore mathematical logic, applied analysis, advanced statistics and computational modelling.</p>
+          <div class="card-footer">
+            <span class="tag">Undergraduate</span>
+            <button class="card-action" type="button" data-program="math">
+              Explore Program <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <div class="empty-state" id="courseEmpty" hidden>
+        <span class="material-symbols-outlined">search_off</span>
+        <h3>No programmes found</h3>
+        <p>
+          We could not find a programme matching your search. Try a broader keyword or
+          reset the filters.
+        </p>
+        <button class="btn btn-outline" id="clearFilters" type="button">
+          <span class="material-symbols-outlined">restart_alt</span> Clear Filters
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------- Catalog banner ------------------------- -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Need Detailed Syllabus &amp; Prerequisites?</h2>
+          <p>
+            The full undergraduate guidebook lists course prerequisites, credit hours and
+            semester-wise breakdowns for every programme.
+          </p>
+        </div>
+        <button class="btn btn-primary" type="button"
+                data-toast="The catalog PDF is not uploaded yet - it will be linked here once it is ready.">
+          <span class="material-symbols-outlined">file_download</span> Download Catalog (PDF)
+        </button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ SHARED FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <span class="material-symbols-outlined">school</span>
+          <span class="brand-name">CampusConnect</span>
+        </a>
+        <p>Connecting students with campus academic programmes, departments and support services.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="departments.html">Departments</a>
+          <a href="courses.html">Courses</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Campus Contact</h3>
+        <ul class="footer-contact">
+          <li><span class="material-symbols-outlined">mail</span> info@campusconnect.edu</li>
+          <li><span class="material-symbols-outlined">call</span> (555) 234-5678</li>
+          <li><span class="material-symbols-outlined">location_on</span> University Hall, Campus Drive</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> CampusConnect. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Detail dialog: filled in by js/script.js -->
+<div class="modal" id="detailModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Details">
+    <button class="modal-close" type="button" data-close aria-label="Close details">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Toast used by placeholder actions such as Login -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="material-symbols-outlined">info</span>
+  <span class="toast-text"></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

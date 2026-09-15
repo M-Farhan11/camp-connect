@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect - Contact</title>
+<meta name="description" content="Contact the CampusConnect campus office or submit a student enquiry.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ SHARED HEADER ============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="material-symbols-outlined brand-icon">school</span>
+      <span class="brand-name">CampusConnect</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="contact.html" aria-current="page">Contact</a>
+      <a href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------------------------- Page hero ---------------------------- -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact CampusConnect</h1>
+      <p>
+        Have a question about academics, departments, courses or student services?
+        Get in touch with our campus support team.
+      </p>
+    </div>
+  </section>
+
+  <!-- --------------- Contact details + student enquiry form -------------- -->
+  <section class="section">
+    <div class="container contact-layout">
+
+      <!-- Left: campus contact details -->
+      <div class="panel">
+        <h2>Campus Office &amp; Enquiries</h2>
+        <p class="panel-sub">Office hours, address and the channels our administrative team monitors.</p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="material-symbols-outlined">location_on</span>
+            <div>
+              <h4>Campus Address</h4>
+              <p>University Hall<br>Campus Drive, Academic Quad</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="material-symbols-outlined">call</span>
+            <div>
+              <h4>Phone</h4>
+              <p>(555) 234-5678<br>Central switchboard and front desk</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="material-symbols-outlined">mail</span>
+            <div>
+              <h4>Email</h4>
+              <p>info@campusconnect.edu<br>Official student and public inbox</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="material-symbols-outlined">schedule</span>
+            <div>
+              <h4>Office Hours</h4>
+              <p>Monday to Friday<br>9:00 AM to 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="note">
+          <strong>Student enquiries:</strong> for urgent academic advising, fee matters or
+          technical support, check the
+          <a href="services.html">Student Services directory</a> first - most questions are
+          answered there.
+        </p>
+      </div>
+
+      <!-- Right: enquiry form -->
+      <div class="panel">
+        <h2>Submit a Student Enquiry</h2>
+        <p class="panel-sub">Send us your question and our campus support team will get back to you.</p>
+
+        <div class="alert alert-error" id="formError" role="alert">
+          <span class="material-symbols-outlined">error</span>
+          <span>Please correct the highlighted fields before submitting.</span>
+        </div>
+
+        <div class="alert alert-success" id="formSuccess" role="status">
+          <span class="material-symbols-outlined">check_circle</span>
+          <span>Your enquiry has been submitted successfully. A representative will contact you shortly.</span>
+        </div>
+
+        <form class="form-grid" id="enquiryForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input class="input" id="fullName" name="fullName" type="text" placeholder="Enter your full name">
+              <span class="field-error" id="fullNameError">
+                <span class="material-symbols-outlined">priority_high</span> Please enter your name (at least 3 characters).
+              </span>
+            </div>
+
+            <div class="field">
+              <label for="regNumber">Student Registration Number <span class="req">*</span></label>
+              <input class="input" id="regNumber" name="regNumber" type="text" placeholder="e.g. FA22-BSE-100">
+              <span class="hint">Format: year-department-roll number</span>
+              <span class="field-error" id="regNumberError">
+                <span class="material-symbols-outlined">priority_high</span> Enter a valid registration number, e.g. FA22-BSE-100 or 2023-SE-045.
+              </span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input class="input" id="email" name="email" type="email" placeholder="Enter your email address">
+              <span class="field-error" id="emailError">
+                <span class="material-symbols-outlined">priority_high</span> Please enter a valid email address.
+              </span>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject <span class="req">*</span></label>
+              <input class="input" id="subject" name="subject" type="text" placeholder="What is your enquiry about?">
+              <span class="field-error" id="subjectError">
+                <span class="material-symbols-outlined">priority_high</span> Please enter a subject.
+              </span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea class="textarea" id="message" name="message" placeholder="Write your message here..."></textarea>
+            <span class="field-error" id="messageError">
+              <span class="material-symbols-outlined">priority_high</span> Please enter your message (at least 10 characters).
+            </span>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" type="submit">
+              Send Enquiry <span class="material-symbols-outlined">send</span>
+            </button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ SHARED FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <span class="material-symbols-outlined">school</span>
+          <span class="brand-name">CampusConnect</span>
+        </a>
+        <p>Connecting students with campus academic programmes, departments and support services.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="departments.html">Departments</a>
+          <a href="courses.html">Courses</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Campus Contact</h3>
+        <ul class="footer-contact">
+          <li><span class="material-symbols-outlined">mail</span> info@campusconnect.edu</li>
+          <li><span class="material-symbols-outlined">call</span> (555) 234-5678</li>
+          <li><span class="material-symbols-outlined">location_on</span> University Hall, Campus Drive</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> CampusConnect. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast used by placeholder actions such as Login -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="material-symbols-outlined">info</span>
+  <span class="toast-text"></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect - Home</title>
+<meta name="description" content="CampusConnect is a mini university web portal for departments, courses, student services and contact details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ SHARED HEADER ============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="material-symbols-outlined brand-icon">school</span>
+      <span class="brand-name">CampusConnect</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a class="active" href="index.html" aria-current="page">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ------------------------------- Hero ------------------------------- -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Your Campus.<br>Your Opportunities.</h1>
+        <p>
+          Explore departments, discover courses, access student services and stay
+          connected with your university - all from one portal.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="departments.html">Explore Departments</a>
+          <a class="btn btn-outline" href="courses.html">View Courses</a>
+        </div>
+      </div>
+
+      <div class="hero-figure">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="none">
+          <path d="M100 24L28 62V72H172V62L100 24Z" fill="currentColor" opacity="0.95"></path>
+          <rect x="42" y="80" width="16" height="74" rx="2" fill="currentColor" opacity="0.8"></rect>
+          <rect x="74" y="80" width="16" height="74" rx="2" fill="currentColor" opacity="0.8"></rect>
+          <rect x="110" y="80" width="16" height="74" rx="2" fill="currentColor" opacity="0.8"></rect>
+          <rect x="142" y="80" width="16" height="74" rx="2" fill="currentColor" opacity="0.8"></rect>
+          <rect x="24" y="158" width="152" height="12" rx="2" fill="currentColor" opacity="0.95"></rect>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------- Quick access --------------------------- -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Quick Access</h2>
+        <p>Direct navigation to the core areas of the campus portal.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <a class="card card--link" href="departments.html">
+          <span class="card-icon"><span class="material-symbols-outlined">account_balance</span></span>
+          <h3>Departments</h3>
+          <p>Explore academic faculties, schools and degree specialisations.</p>
+          <span class="inline-link">Explore Departments <span class="material-symbols-outlined">arrow_forward</span></span>
+        </a>
+
+        <a class="card card--link" href="courses.html">
+          <span class="card-icon"><span class="material-symbols-outlined">school</span></span>
+          <h3>Courses &amp; Programs</h3>
+          <p>Browse undergraduate programme offerings, subjects and curriculum.</p>
+          <span class="inline-link">Browse Courses <span class="material-symbols-outlined">arrow_forward</span></span>
+        </a>
+
+        <a class="card card--link" href="services.html">
+          <span class="card-icon"><span class="material-symbols-outlined">volunteer_activism</span></span>
+          <h3>Student Services</h3>
+          <p>Find advising, library resources, career counselling and IT support.</p>
+          <span class="inline-link">Access Services <span class="material-symbols-outlined">arrow_forward</span></span>
+        </a>
+
+        <a class="card card--link" href="contact.html">
+          <span class="card-icon"><span class="material-symbols-outlined">contact_support</span></span>
+          <h3>Contact &amp; Enquiries</h3>
+          <p>Get in touch with campus offices or submit a student enquiry.</p>
+          <span class="inline-link">Contact Us <span class="material-symbols-outlined">arrow_forward</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------- Portal values -------------------------- -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Students Use CampusConnect</h2>
+        <p>One place for the information students look for most often.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="feature">
+          <span class="material-symbols-outlined">explore</span>
+          <div>
+            <h4>Easy Navigation</h4>
+            <p>Quick discovery across all academic departments.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">sentiment_satisfied</span>
+          <div>
+            <h4>Student Focused</h4>
+            <p>Essential services and guidance at your fingertips.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">menu_book</span>
+          <div>
+            <h4>Accessible Information</h4>
+            <p>Clear schedules, course outlines and requirements.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="material-symbols-outlined">hub</span>
+          <div>
+            <h4>Connected Campus</h4>
+            <p>Direct contact lines to campus support teams.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------ Popular departments ----------------------- -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <h2>Popular Departments</h2>
+          <p>Explore our most requested academic divisions and programmes.</p>
+        </div>
+        <a class="inline-link" href="departments.html">
+          View all 6 departments <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">terminal</span></span>
+          <h3>Computer Science</h3>
+          <p>Algorithmic problem solving, software systems, AI and computing foundations.</p>
+          <a class="inline-link" href="departments.html">Explore Faculty <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">layers</span></span>
+          <h3>Software Engineering</h3>
+          <p>Large-scale software design, architecture, testing and modern development lifecycles.</p>
+          <a class="inline-link" href="departments.html">Explore Faculty <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">dns</span></span>
+          <h3>Information Technology</h3>
+          <p>Network systems, cybersecurity, cloud architecture and database operations.</p>
+          <a class="inline-link" href="departments.html">Explore Faculty <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">bolt</span></span>
+          <h3>Electrical Engineering</h3>
+          <p>Circuit systems, embedded hardware, robotics and signal processing.</p>
+          <a class="inline-link" href="departments.html">Explore Faculty <span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------- Services preview ------------------------ -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-head-row">
+        <div class="section-head">
+          <h2>Student Services</h2>
+          <p>Dedicated resources to support your academic journey and campus life.</p>
+        </div>
+        <a class="inline-link" href="services.html">
+          Explore all services <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">explore</span></span>
+          <h3>Academic Advising</h3>
+          <p>Personalised guidance for course selection, degree progress and academic planning.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">auto_stories</span></span>
+          <h3>Library &amp; Commons</h3>
+          <p>Academic databases, study spaces, research archives and book lending.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">work</span></span>
+          <h3>Career Services</h3>
+          <p>Resume building, internship placements, employer networking and workshops.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">support_agent</span></span>
+          <h3>IT Support Desk</h3>
+          <p>Technical help with student portals, campus Wi-Fi, email and software tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------- CTA -------------------------------- -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Have Questions About Campus Life or Academics?</h2>
+          <p>
+            Our student support team can help with admissions, course advice and campus
+            facilities. Send us an enquiry and we will get back to you.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Submit a Student Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ SHARED FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <span class="material-symbols-outlined">school</span>
+          <span class="brand-name">CampusConnect</span>
+        </a>
+        <p>Connecting students with campus academic programmes, departments and support services.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="departments.html">Departments</a>
+          <a href="courses.html">Courses</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Campus Contact</h3>
+        <ul class="footer-contact">
+          <li><span class="material-symbols-outlined">mail</span> info@campusconnect.edu</li>
+          <li><span class="material-symbols-outlined">call</span> (555) 234-5678</li>
+          <li><span class="material-symbols-outlined">location_on</span> University Hall, Campus Drive</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> CampusConnect. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast used by placeholder actions such as Login -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="material-symbols-outlined">info</span>
+  <span class="toast-text"></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

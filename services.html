@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CampusConnect - Services</title>
+<meta name="description" content="Academic advising, library, careers, student affairs, IT support and admissions services for CampusConnect students.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============================ SHARED HEADER ============================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="material-symbols-outlined brand-icon">school</span>
+      <span class="brand-name">CampusConnect</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a class="active" href="services.html" aria-current="page">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary btn-sm" href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobileNav">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="container">
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="departments.html">Departments</a>
+      <a href="courses.html">Courses</a>
+      <a class="active" href="services.html" aria-current="page">Services</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" data-toast="Student login arrives with the database tier. For now, use the enquiry form on the Contact page.">Login</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ---------------------------- Page hero ---------------------------- -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Student Services</h1>
+      <p>
+        Find the resources and support services available to help you succeed
+        throughout your university journey.
+      </p>
+    </div>
+  </section>
+
+  <!-- --------------------------- Services grid -------------------------- -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Campus Support</h2>
+        <p>Open any service to see what it offers, how to access it and who to contact.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">explore</span></span>
+          <h3>Academic Advising</h3>
+          <p>Personalised guidance for course selection, degree progress and academic planning.</p>
+          <button class="card-action" type="button" data-service="advising">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">menu_book</span></span>
+          <h3>Library</h3>
+          <p>Academic databases, study spaces, research resources and book lending services.</p>
+          <button class="card-action" type="button" data-service="library">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">work</span></span>
+          <h3>Career Services</h3>
+          <p>Support with resume building, internships, employer networking and career development.</p>
+          <button class="card-action" type="button" data-service="career">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">groups</span></span>
+          <h3>Student Affairs</h3>
+          <p>Guidance and support for student needs, campus life and university-related concerns.</p>
+          <button class="card-action" type="button" data-service="affairs">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">support_agent</span></span>
+          <h3>IT Support</h3>
+          <p>Technical assistance with student portals, campus Wi-Fi, email and software tools.</p>
+          <button class="card-action" type="button" data-service="it">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+
+        <div class="card">
+          <span class="card-icon"><span class="material-symbols-outlined">school</span></span>
+          <h3>Admissions</h3>
+          <p>Information about admission requirements, programmes and the application process.</p>
+          <button class="card-action" type="button" data-service="admissions">
+            Access Resource <span class="material-symbols-outlined">arrow_forward</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------- CTA -------------------------------- -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>Need More Help?</h2>
+          <p>
+            Our support team is available to help you find the right campus resource or
+            answer your questions.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Submit a Student Enquiry</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ SHARED FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">
+          <span class="material-symbols-outlined">school</span>
+          <span class="brand-name">CampusConnect</span>
+        </a>
+        <p>Connecting students with campus academic programmes, departments and support services.</p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Navigation</h3>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="departments.html">Departments</a>
+          <a href="courses.html">Courses</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Campus Contact</h3>
+        <ul class="footer-contact">
+          <li><span class="material-symbols-outlined">mail</span> info@campusconnect.edu</li>
+          <li><span class="material-symbols-outlined">call</span> (555) 234-5678</li>
+          <li><span class="material-symbols-outlined">location_on</span> University Hall, Campus Drive</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="footerYear">2026</span> CampusConnect. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Detail dialog: filled in by js/script.js -->
+<div class="modal" id="detailModal" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Details">
+    <button class="modal-close" type="button" data-close aria-label="Close details">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<!-- Toast used by placeholder actions such as Login -->
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <span class="material-symbols-outlined">info</span>
+  <span class="toast-text"></span>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
